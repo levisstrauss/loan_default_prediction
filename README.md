@@ -49,6 +49,7 @@ hyperparameter optimization, model calibration, interpretability, and drift moni
 ## Running Individual Steps
 To run specific steps of the pipeline:
 
+
 ```bash
    # Run only the download and cleaning steps
     mlflow run . -P steps=download,basic_cleaning
@@ -58,6 +59,14 @@ To run specific steps of the pipeline:
 
     # Run only the evaluation step
     mlflow run . -P steps=evaluate_model
+```
+
+## The EDA component
+This component has to be executed and the EDA performed should now be 
+part of the pipeline
+
+```bash
+   mlflow run src/eda
 ```
 
 ## Configuration
@@ -168,4 +177,4 @@ After running the monitoring step, you can find the dashboard at:
 Contributions to this project are welcome! Please feel free to submit issues or pull requests.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - 
