@@ -76,6 +76,14 @@ any configuration parameter using Hydra's syntax:
     # Change feature engineering settings
     mlflow run . -P hydra_options="feature_engineering.enable_auto_selection=false"
 ```
+## Steps
+
+### Download component
+Let start with the command downloading the dataset and storing it to W&B
+
+```bash
+   mllflow 
+```
 
 ## Project Structure
 

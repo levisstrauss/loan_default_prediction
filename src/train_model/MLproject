@@ -1,0 +1,36 @@
+name: train_model
+conda_env: conda.yml
+entry_points:
+  main:
+    parameters:
+      train_data:
+        description: Training data artifact
+        type: str
+      val_data:
+        description: Validation data artifact
+        type: str
+      xgb_config:
+        description: XGBoost model configuration file
+        type: str
+      random_seed:
+        description: Random seed for reproducibility
+        type: int
+      n_trials:
+        description: Number of hyperparameter optimization trials
+        type: int
+        default: 50
+      optimize_for:
+        description: Metric to optimize (auc, f1, precision, recall)
+        type: str
+        default: "auc"
+      output_artifact:
+        description: Name for the output model artifact
+        type: str
+    command: >
+      python run.py --train_data {train_data} \
+                    --val_data {val_data} \
+                    --xgb_config {xgb_config} \
+                    --random_seed {random_seed} \
+                    --n_trials {n_trials} \
+                    --optimize_for {optimize_for} \
+                    --output_artifact {output_artifact}

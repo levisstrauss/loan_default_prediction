@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/codemon/Desktop/loan_default_prediction/mlruns/0/ab1cfa53d7d54bbea746bbed12639884/artifacts
+end_time: 1747655899465
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ab1cfa53d7d54bbea746bbed12639884
+run_name: painted-eel-113
+run_uuid: ab1cfa53d7d54bbea746bbed12639884
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747655896208
+status: 4
+tags: []
+user_id: codemon

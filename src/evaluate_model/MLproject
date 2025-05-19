@@ -1,0 +1,19 @@
+name: evaluate_model
+conda_env: conda.yml
+entry_points:
+  main:
+    parameters:
+      model:
+        description: Model artifact to evaluate
+        type: str
+      test_data:
+        description: Test data artifact
+        type: str
+      target_column:
+        description: Target column name
+        type: str
+        default: "loan_status"
+    command: >
+      python run.py --model {model} \
+                    --test_data {test_data} \
+                    --target_column {target_column}

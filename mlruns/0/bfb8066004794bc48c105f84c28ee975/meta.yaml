@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/codemon/Desktop/loan_default_prediction/mlruns/0/bfb8066004794bc48c105f84c28ee975/artifacts
+end_time: 1747677174214
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bfb8066004794bc48c105f84c28ee975
+run_name: dapper-eel-40
+run_uuid: bfb8066004794bc48c105f84c28ee975
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747677165331
+status: 4
+tags: []
+user_id: codemon

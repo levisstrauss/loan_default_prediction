@@ -1,0 +1,42 @@
+name: feature_engineering
+conda_env: conda.yml
+entry_points:
+  main:
+    parameters:
+      input_artifact:
+        description: Input artifact to process
+        type: str
+      output_artifact:
+        description: Name for the feature-engineered W&B artifact
+        type: str
+      output_type:
+        description: Type for the feature-engineered W&B artifact
+        type: str
+      output_description:
+        description: Description for the feature-engineered W&B artifact
+        type: str
+      enable_feature_generation:
+        description: Whether to enable feature generation
+        type: str
+        default: "true"
+      enable_auto_selection:
+        description: Whether to enable automated feature selection
+        type: str
+        default: "true"
+      scaling_method:
+        description: Method for feature scaling (robust, standard, minmax, yeo-johnson)
+        type: str
+        default: "robust"
+      imputation_strategy:
+        description: Method for missing value imputation (mean, median, knn)
+        type: str
+        default: "knn"
+    command: >
+      python run.py --input_artifact {input_artifact} \
+                    --output_artifact {output_artifact} \
+                    --output_type {output_type} \
+                    --output_description {output_description} \
+                    --enable_feature_generation {enable_feature_generation} \
+                    --enable_auto_selection {enable_auto_selection} \
+                    --scaling_method {scaling_method} \
+                    --imputation_strategy {imputation_strategy}

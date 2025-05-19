@@ -1,0 +1,44 @@
+{
+    "os": "macOS-15.4.1-x86_64-i386-64bit",
+    "python": "3.10.17",
+    "heartbeatAt": "2025-05-19T18:21:49.947667",
+    "startedAt": "2025-05-19T18:21:49.372511",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "EDA.ipynb",
+    "codePathLocal": "EDA.ipynb",
+    "root": "/Users/codemon/Desktop/loan_default_prediction",
+    "git": {
+        "remote": "https://github.com/levisstrauss/loan_default_prediction.git",
+        "commit": "59d43b6fc179ec6eb7e393858e6ddc2c40a2bf20"
+    },
+    "email": null,
+    "host": "Codemons-MacBook-Pro.local",
+    "username": "codemon",
+    "executable": "/opt/anaconda3/envs/mlflow-0389ccce601f8d5a5f45af778431d3d3bfa5798e/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2300,
+        "min": 2300,
+        "max": 2300
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2300,
+            "min": 2300,
+            "max": 2300
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 931.546989440918,
+            "used": 185.65436935424805
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

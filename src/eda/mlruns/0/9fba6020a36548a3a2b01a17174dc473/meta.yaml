@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/codemon/Desktop/loan_default_prediction/src/eda/mlruns/0/9fba6020a36548a3a2b01a17174dc473/artifacts
+end_time: 1747656113839
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9fba6020a36548a3a2b01a17174dc473
+run_name: mysterious-bass-203
+run_uuid: 9fba6020a36548a3a2b01a17174dc473
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747656110377
+status: 4
+tags: []
+user_id: codemon

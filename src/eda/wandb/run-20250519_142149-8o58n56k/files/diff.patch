@@ -1,0 +1,44 @@
+diff --git a/.idea/loan_default_prediction.iml b/.idea/loan_default_prediction.iml
+index ea0213e..bd6960d 100644
+--- a/.idea/loan_default_prediction.iml
++++ b/.idea/loan_default_prediction.iml
+@@ -4,7 +4,7 @@
+     <content url="file://$MODULE_DIR$">
+       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.13 (loan_default_prediction)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="/opt/anaconda3/envs/mlflowenv" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+index 34249e5..9fccd73 100644
+--- a/.idea/misc.xml
++++ b/.idea/misc.xml
+@@ -3,4 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.13 (loan_default_prediction)" />
+   </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="/opt/anaconda3/envs/mlflowenv" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+diff --git a/README.md b/README.md
+index e84cbd1..5d04d6f 100644
+--- a/README.md
++++ b/README.md
+@@ -76,6 +76,14 @@ any configuration parameter using Hydra's syntax:
+     # Change feature engineering settings
+     mlflow run . -P hydra_options="feature_engineering.enable_auto_selection=false"
+ ```
++## Steps
++
++### Download component
++Let start with the command downloading the dataset and storing it to W&B
++
++```bash
++   mllflow 
++```
+ 
+ ## Project Structure
+ 

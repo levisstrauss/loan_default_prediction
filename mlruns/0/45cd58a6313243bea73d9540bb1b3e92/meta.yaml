@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/codemon/Desktop/loan_default_prediction/mlruns/0/45cd58a6313243bea73d9540bb1b3e92/artifacts
+end_time: 1747685500179
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 45cd58a6313243bea73d9540bb1b3e92
+run_name: bold-sow-448
+run_uuid: 45cd58a6313243bea73d9540bb1b3e92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747678146956
+status: 4
+tags: []
+user_id: codemon

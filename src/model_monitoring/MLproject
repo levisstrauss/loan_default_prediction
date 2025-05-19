@@ -1,0 +1,34 @@
+name: model_monitoring
+conda_env: conda.yml
+entry_points:
+  main:
+    parameters:
+      model:
+        description: Model artifact to monitor
+        type: str
+      reference_data:
+        description: Reference data artifact for drift detection
+        type: str
+      drift_threshold:
+        description: Threshold for drift detection
+        type: float
+        default: 0.1
+      performance_threshold:
+        description: Threshold for performance degradation
+        type: float
+        default: 0.05
+      feature_importance_threshold:
+        description: Threshold for feature importance changes
+        type: float
+        default: 0.2
+      target_column:
+        description: Target column name
+        type: str
+        default: "loan_status"
+    command: >
+      python run.py --model {model} \
+                    --reference_data {reference_data} \
+                    --drift_threshold {drift_threshold} \
+                    --performance_threshold {performance_threshold} \
+                    --feature_importance_threshold {feature_importance_threshold} \
+                    --target_column {target_column}

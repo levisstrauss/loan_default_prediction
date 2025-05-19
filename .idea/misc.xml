@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.13 (loan_default_prediction)" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="mlflowenv" project-jdk-type="Python SDK" />
 </project>
