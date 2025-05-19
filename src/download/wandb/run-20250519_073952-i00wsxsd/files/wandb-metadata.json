@@ -1,0 +1,45 @@
+{
+  "os": "macOS-15.4.1-x86_64-i386-64bit-Mach-O",
+  "python": "CPython 3.13.3",
+  "startedAt": "2025-05-19T11:39:52.466157Z",
+  "args": [
+    "--data_url",
+    "https://resources.lendingclub.com/LoanStats_2018Q4.csv.zip",
+    "--artifact_name",
+    "raw_lending_club_data.csv",
+    "--artifact_type",
+    "raw_data",
+    "--artifact_description",
+    "Raw lending club loan data"
+  ],
+  "program": "/Users/codemon/Desktop/loan_default_prediction/src/download/run.py",
+  "codePath": "src/download/run.py",
+  "git": {
+    "remote": "https://github.com/levisstrauss/loan_default_prediction.git",
+    "commit": "9ad1d59bbb8562926992e71163ab866757da489e"
+  },
+  "email": "zcoulibalyeng@gmail.com",
+  "root": "/Users/codemon/Desktop/loan_default_prediction/src/download",
+  "host": "Codemons-MacBook-Pro.local",
+  "executable": "/Users/codemon/Desktop/loan_default_prediction/.venv/bin/python",
+  "codePathLocal": "run.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "1000240963584",
+      "used": "216221204480"
+    },
+    "/System/Volumes/Data": {
+      "total": "1000240963584",
+      "used": "216221204480"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  }
+}

@@ -1,0 +1,50 @@
+main:
+  components_repository: .
+  project_name: loan_default_prediction
+  experiment_name: development
+  steps: download
+etl:
+  data_url: https://resources.lendingclub.com/LoanStats_2018Q4.csv.zip
+  min_loan_amount: 1000
+  max_loan_amount: 40000
+  target_column: loan_status
+data_check:
+  kl_threshold: 0.2
+  min_price: 1000
+  max_price: 40000
+feature_engineering:
+  enable_feature_generation: true
+  enable_auto_selection: true
+  scaling_method: robust
+  imputation_strategy: knn
+modeling:
+  test_size: 0.2
+  val_size: 0.25
+  random_seed: 42
+  stratify_by: none
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+    min_child_weight: 1
+    gamma: 0
+    reg_alpha: 0
+    reg_lambda: 1
+    n_jobs: -1
+    early_stopping_rounds: 50
+    objective: binary:logistic
+    eval_metric: auc
+    use_calibration: true
+    calibration_method: isotonic
+  optimization:
+    n_trials: 50
+    optimize_for: auc
+    cv_folds: 5
+monitoring:
+  drift_threshold: 0.1
+  performance_threshold: 0.05
+  feature_importance_threshold: 0.2
+  store_data_snapshots: true
+  max_snapshots: 10

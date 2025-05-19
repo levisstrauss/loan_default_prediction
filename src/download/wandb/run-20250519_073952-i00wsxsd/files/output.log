@@ -1,0 +1,8 @@
+2025-05-19 07:39:53,103 Downloading data from https://resources.lendingclub.com/LoanStats_2018Q4.csv.zip
+2025-05-19 07:39:57,282 Download complete. Extracting files...
+2025-05-19 07:39:57,540 Found CSV file: LoanStats_2018Q4.csv
+/Users/codemon/Desktop/loan_default_prediction/src/download/run.py:61: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(csv_path, skiprows=1)
+2025-05-19 07:39:59,150 Loaded dataset with shape: (2, 144)
+2025-05-19 07:39:59,156 Uploading raw_lending_club_data.csv to Weights & Biases
+2025-05-19 07:39:59,581 Upload complete

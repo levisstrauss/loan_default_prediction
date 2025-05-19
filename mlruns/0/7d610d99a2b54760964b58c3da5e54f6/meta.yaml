@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/codemon/Desktop/loan_default_prediction/mlruns/0/7d610d99a2b54760964b58c3da5e54f6/artifacts
+end_time: 1747654685250
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7d610d99a2b54760964b58c3da5e54f6
+run_name: sassy-ape-452
+run_uuid: 7d610d99a2b54760964b58c3da5e54f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747654560870
+status: 4
+tags: []
+user_id: codemon

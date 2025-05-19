@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/codemon/Desktop/loan_default_prediction/mlruns/0/5b56e2b465404ae59a5cd7a12e8fb35a/artifacts
+end_time: 1747654801829
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5b56e2b465404ae59a5cd7a12e8fb35a
+run_name: magnificent-bug-751
+run_uuid: 5b56e2b465404ae59a5cd7a12e8fb35a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747654724982
+status: 3
+tags: []
+user_id: codemon
