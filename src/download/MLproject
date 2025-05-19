@@ -1,0 +1,22 @@
+name: download_step
+conda_env: conda.yml
+entry_points:
+  main:
+    parameters:
+      data_url:
+        description: URL to download the data from
+        type: str
+      artifact_name:
+        description: Name for the W&B artifact
+        type: str
+      artifact_type:
+        description: Type for the W&B artifact
+        type: str
+      artifact_description:
+        description: Description for the W&B artifact
+        type: str
+    command: >
+      python run.py --data_url {data_url} \
+                    --artifact_name {artifact_name} \
+                    --artifact_type {artifact_type} \
+                    --artifact_description {artifact_description}
